@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order Management System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1.5.1/dist/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <h1>Order Management System</h1>
+        <button id="clearLocalStorageBtn">Clear Cache</button>
+    </div>
+
+    <div class="sections-container">
+
+        <div class="section">
+            <h2>PLACE ORDER</h2>
+            <form id="postForm">
+                <label for="owner">Owner:</label><br>
+                <input type="text" id="owner" name="owner"><br>
+                
+                <label for="product">Product:</label><br>
+                <input type="text" id="product" name="product"><br>
+                
+                <label for="description">Description:</label><br>
+                <input type="text" id="description" name="description"><br>
+                
+                <label for="value">Value:</label><br>
+                <input type="text" id="value" name="value"><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>ORDERS IN PROGRESS</h2>
+            <div id="inProgressList">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>READY ORDERS</h2>
+            <div id="ordersList">
+            </div>
+        </div>
+
+    </div>
+
+    <script type="" src="app.js"></script>
+
+</body>
+
+</html>
