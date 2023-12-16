@@ -23,7 +23,7 @@ It also includes a listener on a queue and uses WebSocket to update the front en
 ## Setup
 
 ```bash
-git clone https://github.com/sergiobriito/ordering-system-with-messaging.git
+git clone https://github.com/sergiobriito/order-management-system.git
 mvn clean install -DskipTests
 docker-compose build
 docker-compose up
